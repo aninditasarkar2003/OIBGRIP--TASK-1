@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anindita's calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+ <div class="calculator" align:center>
+    <div class="display">
+        <input type="text" name="display" id="display">
+    </div>
+<div>
+    <input type="button" style="color:rgba(112, 48, 164, 0.674); background-color:rgb(206, 141, 219);" value="(" onclick="display('(')"/> 
+    <input type="button" style="color:rgb(112, 48, 164); background-color:rgb(202, 141, 219);" value=")" onclick="display(')')" /> 
+    <input type="button" style="color:rgb(112, 48, 164); background-color:rgb(200, 141, 219);" value="ans" onclick="calculate()"/> 
+    <input type="button" style="color:rgb(112, 48, 164); background-color:rgb(193, 141, 219);" value="del" onclick="del()" /> 
+    <input type="button" style="color:rgb(112, 48, 164); background-color:rgb(203, 141, 219);" value="clear" onclick="clearScreen()" />  
+   </div>
+   <div>
+    <input type="button" style="background-color:rgb(221, 204, 244);" value="7" onclick="display('7') " /> 
+    <input type="button" style="background-color:rgb(229, 204, 244);"value="8" onclick="display('8')" /> 
+    <input type="button" style="background-color:rgb(229, 204, 244);"value="9" onclick="display('9')" /> 
+    <input type="button" style="color:rgb(108, 48, 164); background-color:rgb(207, 141, 219);"value="%" onclick="display('%')" /> 
+    <input type="button" style="color:rgb(100, 48, 164); background-color:rgb(205, 141, 219);"value="1/x" onclick="fun()" /> 
+   </div>
+   <div>
+    <input type="button" style="background-color:rgb(240, 204, 244);"value="4" onclick="display('4')" /> 
+    <input type="button"style="background-color:rgb(240, 204,244);" value="5" onclick="display('5')" /> 
+    <input type="button" style="background-color:rgb(240, 204, 244);"value="6" onclick="display('6')" /> 
+    <input type="button" style="color:rgb(116, 48, 164); background-color:rgb(216, 141, 219);"value="x" onclick="display('*')" /> 
+    <input type="button" style="color:rgb(114, 48, 164); background-color:rgb(219, 141, 219);"value="÷" onclick="display('/')" /> 
+   </div>
+<div>
+ <input type="button" style="background-color:rgb(239, 204, 244);"value="1" onclick="display('1')" /> 
+ <input type="button" style="background-color:rgb(240, 204, 244);"value="2" onclick="display('2')" /> 
+ <input type="button" style="background-color:rgb(243, 204, 244);"value="3" onclick="display('3')" /> 
+ <input type="button" style="color:rgb(108, 48, 164); background-color:rgb(197, 141, 219);"value="+" onclick="display('+')" /> 
+ <input type="button" style="color:rgb(110, 48, 164); background-color:rgb(205, 141, 219);"value="-" onclick="display('-')" /> 
+</div>
+
+
+<div>
+ <input type="button" style="color:rgb(106, 48, 164); background-color:rgb(198, 141, 219);"value="." onclick="display('.')" /> 
+ <input type="button" style="background-color:rgb(237, 204, 244);"value="0" onclick="display('0')" /> 
+ <input type="button" style="color:rgb(112, 48, 164); background-color:rgb(181, 141, 219);"value="00" onclick="display('00')"/> 
+ <input type="button" style="color:#fff;background-color: rgb(106, 48, 164);"value="ENTER"  onclick="calculate()" class="equal" />
+</div>
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
